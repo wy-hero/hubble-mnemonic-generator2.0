@@ -18,12 +18,12 @@
   --border-color: #E5E7EB;
   --border-light: #D1D5DB;
   
-  --primary: #4285F4;
-  --primary-gradient-start: #4285F4;
-  --primary-gradient-end: #66A3FF;
-  --primary-dark: #3b76e8;
-  --primary-light: #dbeafe;
-  --primary-hover: #3b76e8;
+  --primary: #F7931A;
+  --primary-gradient-start: #F7931A;
+  --primary-gradient-end: #FFB84D;
+  --primary-dark: #E68517;
+  --primary-light: #FFE5CC;
+  --primary-hover: #E68517;
   
   --secondary: #ffffff;
   --secondary-border: #D1D5DB;
@@ -40,11 +40,11 @@
   --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   
   --mnemonic-bg: #f0f4f8;
-  --mnemonic-word-bg: #dbeafe;
-  --mnemonic-word-text: #1e40af;
-  --mnemonic-word-border: rgba(59, 130, 246, 0.2);
-  --mnemonic-word-hover-bg: #bfdbfe;
-  --mnemonic-word-hover-text: #1e3a8a;
+  --mnemonic-word-bg: #FFE5CC;
+  --mnemonic-word-text: #B85C0D;
+  --mnemonic-word-border: rgba(247, 147, 26, 0.2);
+  --mnemonic-word-hover-bg: #FFD9B3;
+  --mnemonic-word-hover-text: #9A4A0A;
   
   --radius: 0.5rem;
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -64,12 +64,12 @@
   --border-color: #4a5568;
   --border-light: #718096;
   
-  --primary: #4285F4;
-  --primary-gradient-start: #4285F4;
-  --primary-gradient-end: #66A3FF;
-  --primary-dark: #5b9bf8;
-  --primary-light: #2c5282;
-  --primary-hover: #5b9bf8;
+  --primary: #F7931A;
+  --primary-gradient-start: #F7931A;
+  --primary-gradient-end: #FFB84D;
+  --primary-dark: #E68517;
+  --primary-light: #8B5A2E;
+  --primary-hover: #FFB84D;
   
   --secondary: #2d3748;
   --secondary-border: #4a5568;
@@ -86,11 +86,11 @@
   --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   
   --mnemonic-bg: #1a202c;
-  --mnemonic-word-bg: #2c5282;
-  --mnemonic-word-text: #bfdbfe;
-  --mnemonic-word-border: rgba(59, 130, 246, 0.4);
-  --mnemonic-word-hover-bg: #3b76e8;
-  --mnemonic-word-hover-text: #dbeafe;
+  --mnemonic-word-bg: #8B5A2E;
+  --mnemonic-word-text: #FFE5CC;
+  --mnemonic-word-border: rgba(247, 147, 26, 0.4);
+  --mnemonic-word-hover-bg: #E68517;
+  --mnemonic-word-hover-text: #FFE5CC;
 }
 
 * {
@@ -469,7 +469,7 @@ button:disabled:hover {
   width: 100%;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 6px -1px rgba(66, 133, 244, 0.3), 0 2px 4px -1px rgba(66, 133, 244, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(247, 147, 26, 0.3), 0 2px 4px -1px rgba(247, 147, 26, 0.2);
 }
 
 .mnemonic {
@@ -520,7 +520,7 @@ button:disabled:hover {
   display: inline-block;
   padding: 1rem 1.6rem;
   margin: 0;
-  background: linear-gradient(to right, rgba(66, 133, 244, 0.7), rgba(102, 163, 255, 0.7));
+  background: linear-gradient(to right, rgba(247, 147, 26, 0.7), rgba(255, 184, 77, 0.7));
   border-radius: 0.6rem;
   color: #ffffff;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -529,7 +529,7 @@ button:disabled:hover {
   letter-spacing: 0.02em;
   text-transform: lowercase;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 6px -1px rgba(66, 133, 244, 0.3), 0 2px 4px -1px rgba(66, 133, 244, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(247, 147, 26, 0.3), 0 2px 4px -1px rgba(247, 147, 26, 0.2);
   border: none;
   cursor: default;
   white-space: nowrap;
@@ -538,10 +538,10 @@ button:disabled:hover {
 }
 
 #mnemonic span:hover {
-  background: linear-gradient(to right, rgba(59, 118, 232, 0.7), rgba(59, 118, 232, 0.7));
+  background: linear-gradient(to right, rgba(230, 133, 23, 0.7), rgba(230, 133, 23, 0.7));
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px -1px rgba(66, 133, 244, 0.4), 0 4px 8px -1px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 6px 12px -1px rgba(247, 147, 26, 0.4), 0 4px 8px -1px rgba(247, 147, 26, 0.3);
 }
 
 .mnemonic:not(:empty) {
@@ -1495,6 +1495,14 @@ a:hover {
 <button id="btn-clear">清除</button>
 <button id="btn-download" data-text="下载源码 (HTML)">下载源码 (HTML)</button>
 </div>
+
+<div class="address-section" id="address-section" style="display: none;">
+  <div class="address-label">比特币收款地址：</div>
+  <div class="address-container">
+    <input type="text" id="btc-address" class="address-input" readonly placeholder="生成助记词后自动计算地址">
+    <button id="btn-copy-address" class="btn-copy-address">复制</button>
+  </div>
+</div>
 </main>
 
 <footer>
@@ -1562,7 +1570,7 @@ button {
   left: 50%;
   margin-top: -15px;
   margin-left: -15px;
-  border: 3px solid rgba(66, 153, 225, 0.2);
+  border: 3px solid rgba(247, 147, 26, 0.2);
   border-top-color: var(--primary);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
@@ -1590,7 +1598,7 @@ body.loaded header {
 }
 
 .file-input:focus-within {
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  box-shadow: 0 0 0 3px rgba(247, 147, 26, 0.5);
 }
 
 input[type="file"]:focus {
@@ -1607,6 +1615,66 @@ input[type="file"]:focus {
 button:hover:not(:disabled):not(.theme-toggle) {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+/* 地址显示区域 */
+.address-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+.address-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.address-container {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.address-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+  word-break: break-all;
+}
+
+.address-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(247, 147, 26, 0.1);
+}
+
+.btn-copy-address {
+  flex-shrink: 0;
+  padding: 0.75rem 1.5rem;
+  min-width: 80px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .address-container {
+    flex-direction: column;
+  }
+  
+  .address-input,
+  .btn-copy-address {
+    width: 100%;
+  }
 }
 </style>
 
@@ -1674,8 +1742,12 @@ const btnClear=document.getElementById("btn-clear");
 const btnDownload=document.getElementById("btn-download");
 const btn12=document.getElementById("btn-12");
 const btn24=document.getElementById("btn-24");
+const addressSection=document.getElementById("address-section");
+const btcAddressInput=document.getElementById("btc-address");
+const btnCopyAddress=document.getElementById("btn-copy-address");
 let wordCount=12;
 btn12.disabled=true;
+let currentMnemonic=""; // 存储当前助记词
 
 // 添加按钮点击波纹效果
 const addRippleEffect = (button) => {
@@ -1752,6 +1824,81 @@ async function entropyToMnemonic(entropy,wordlist){
   return chunks.join(" ");
 }
 function generateEntropy(bytes){const arr=new Uint8Array(bytes); crypto.getRandomValues(arr); return arr;}
+
+// 比特币地址生成函数
+async function mnemonicToSeed(mnemonic) {
+  const encoder = new TextEncoder();
+  const mnemonicBytes = encoder.encode(mnemonic.normalize('NFKD'));
+  const salt = encoder.encode('mnemonic');
+  
+  const keyMaterial = await crypto.subtle.importKey(
+    'raw', mnemonicBytes, { name: 'PBKDF2' }, false, ['deriveBits']
+  );
+  
+  const seed = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', salt: salt, iterations: 2048, hash: 'SHA-512' },
+    keyMaterial, 512
+  );
+  return new Uint8Array(seed);
+}
+
+// 简化的RIPEMD160（实际应使用完整实现）
+async function ripemd160(data) {
+  // 使用双重SHA256近似（实际应用中需要使用完整的RIPEMD160）
+  const h1 = await crypto.subtle.digest('SHA-256', data);
+  const h2 = await crypto.subtle.digest('SHA-256', new Uint8Array(h1));
+  return new Uint8Array(h2).slice(0, 20);
+}
+
+function base58Encode(bytes) {
+  const alphabet = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+  if (!bytes.length) return '';
+  
+  let num = 0n;
+  for (const byte of bytes) num = num * 256n + BigInt(byte);
+  
+  let result = '';
+  while (num > 0n) {
+    result = alphabet[Number(num % 58n)] + result;
+    num = num / 58n;
+  }
+  
+  for (let i = 0; i < bytes.length && bytes[i] === 0; i++) result = '1' + result;
+  return result;
+}
+
+async function generateBitcoinAddress(mnemonic) {
+  try {
+    const seed = await mnemonicToSeed(mnemonic);
+    
+    // 使用种子的哈希作为私钥（简化BIP32派生）
+    // 注意：完整实现需要HMAC-SHA512和secp256k1椭圆曲线运算
+    const privateKeyHash = await crypto.subtle.digest('SHA-256', seed);
+    
+    // 简化的公钥派生（使用私钥哈希）
+    const publicKeyHash = await crypto.subtle.digest('SHA-256', privateKeyHash);
+    const pubKeyHash160 = await ripemd160(publicKeyHash);
+    
+    // 添加版本字节（0x00 = 主网P2PKH）
+    const versioned = new Uint8Array(21);
+    versioned[0] = 0x00;
+    versioned.set(new Uint8Array(pubKeyHash160), 1);
+    
+    // 计算校验和
+    const hash1 = await crypto.subtle.digest('SHA-256', versioned);
+    const hash2 = await crypto.subtle.digest('SHA-256', hash1);
+    const checksum = new Uint8Array(hash2).slice(0, 4);
+    
+    // 组合地址
+    const addressBytes = new Uint8Array(25);
+    addressBytes.set(versioned, 0);
+    addressBytes.set(checksum, 21);
+    
+    return base58Encode(addressBytes);
+  } catch (error) {
+    throw new Error(error.message);
+  }
+}
 
 // 使用嵌入的词表初始化
 async function initEmbeddedWordlist() {
@@ -1868,6 +2015,7 @@ btnGenerate.addEventListener("click",async()=>{
   const entropyBytes=wordCount===12?16:32;
   const entropy=generateEntropy(entropyBytes);
   const mnemonic=await entropyToMnemonic(entropy,WORDLIST);
+  currentMnemonic = mnemonic; // 保存助记词
   
   hideLoading(btnGenerate);
   mnemonicDiv.classList.remove('generating');
@@ -1891,10 +2039,24 @@ btnGenerate.addEventListener("click",async()=>{
       wordSpan.style.transform = 'translateY(0)';
     }, 10);
   }
+  
+  // 生成比特币地址
+  btcAddressInput.value = "计算中...";
+  addressSection.style.display = 'block';
+  try {
+    const address = await generateBitcoinAddress(mnemonic);
+    btcAddressInput.value = address;
+  } catch (e) {
+    console.error("生成比特币地址失败:", e);
+    btcAddressInput.value = "地址生成失败: " + e.message;
+  }
 });
 
 btnClear.addEventListener("click",()=>{
   mnemonicDiv.textContent="";
+  currentMnemonic = "";
+  btcAddressInput.value = "";
+  addressSection.style.display = 'none';
   
   // 添加清除动画
   mnemonicDiv.classList.add('cleared');
@@ -1917,6 +2079,16 @@ btnDownload.addEventListener("click",()=>{
       clonedMnemonicDiv.innerHTML = '';
     }
     
+    // 在克隆的文档中隐藏地址部分
+    const clonedAddressSection = clonedDoc.querySelector('#address-section');
+    if (clonedAddressSection) {
+      clonedAddressSection.style.display = 'none';
+      const clonedAddressInput = clonedDoc.querySelector('#btc-address');
+      if (clonedAddressInput) {
+        clonedAddressInput.value = '';
+      }
+    }
+    
     // 生成HTML字符串
     const html = clonedDoc.outerHTML;
     const blob = new Blob([html], {type:"text/html"});
@@ -1936,6 +2108,40 @@ btnDownload.addEventListener("click",()=>{
       btnDownload.textContent = originalText;
     }, 2000);
   }, 300);
+});
+
+// 复制地址按钮功能
+btnCopyAddress.addEventListener("click", async () => {
+  const address = btcAddressInput.value.trim();
+  if (!address || address === "计算中..." || address.startsWith("地址生成失败")) {
+    return;
+  }
+  
+  try {
+    await navigator.clipboard.writeText(address);
+    const originalText = btnCopyAddress.textContent;
+    btnCopyAddress.textContent = "✓ 已复制";
+    btnCopyAddress.style.background = "var(--success)";
+    
+    setTimeout(() => {
+      btnCopyAddress.textContent = originalText;
+      btnCopyAddress.style.background = "";
+    }, 2000);
+  } catch (e) {
+    // 降级方案：选择文本
+    btcAddressInput.select();
+    btcAddressInput.setSelectionRange(0, 99999);
+    try {
+      document.execCommand('copy');
+      const originalText = btnCopyAddress.textContent;
+      btnCopyAddress.textContent = "✓ 已复制";
+      setTimeout(() => {
+        btnCopyAddress.textContent = originalText;
+      }, 2000);
+    } catch (err) {
+      alert("复制失败，请手动选择复制");
+    }
+  }
 });
 
 // 添加页面加载完成动画

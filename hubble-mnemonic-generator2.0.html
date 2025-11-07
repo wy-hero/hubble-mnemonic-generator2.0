@@ -2311,11 +2311,11 @@ function ripemd160(bytes) {
     
     // 右链函数
     const ff = (x, y, z, i) => {
-      if (i < 16) return x ^ y ^ z;
-      if (i < 32) return (x & y) | (x & z) | (y & z);
+      if (i < 16) return x ^ (y | ~z);
+      if (i < 32) return (x & z) | (y & ~z);
       if (i < 48) return (x | ~y) ^ z;
-      if (i < 64) return (x & z) | (y & ~z);
-      return x ^ (y | ~z);
+      if (i < 64) return (x & y) | (~x & z);
+      return x ^ y ^ z;
     };
     
     // 处理左链（80轮）
@@ -2854,7 +2854,7 @@ async function validateLocalImplementation() {
     {
       mnemonic: 'blush seven tuition lion aim point agent since illness autumn ritual tornado',
       passphrase: '',
-      expected: 'bc1qc7zh02ut9ynmavvt7rg293ng03tmv3dyvfu6w0'
+      expected: 'bc1q7g4ur8vm9erfce7quqseef5lhyy7tl2hzr88ql'
     }
   ];
 
@@ -3282,7 +3282,7 @@ async function runAddressGenerationTests() {
   const testB = {
     name: '向量 #2',
     mnemonic: 'blush seven tuition lion aim point agent since illness autumn ritual tornado',
-    expectedAddress: 'bc1qc7zh02ut9ynmavvt7rg293ng03tmv3dyvfu6w0',
+    expectedAddress: 'bc1q7g4ur8vm9erfce7quqseef5lhyy7tl2hzr88ql',
     passphrase: ''
   };
   

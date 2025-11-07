@@ -4,6 +4,8 @@
 
 Hubble Mnemonic Generator 2.0 is a fully static, offline-ready HTML application for creating BIP39 mnemonics and deriving the first P2WPKH (BIP84) receiving address. All cryptographic primitives (PBKDF2, HMAC-SHA512, SHA-256, RIPEMD-160, secp256k1 operations, Bech32 encoding) are bundled inside the page, so no external scripts or network access are required at runtime.
 
+> Original project reference: https://bip39.btchao.com/
+
 ### Key Features
 
 - Generates 12-word or 24-word English BIP39 mnemonics using `crypto.getRandomValues`.
@@ -57,6 +59,8 @@ This project is provided **“as is”** without any warranty. The maintainers a
 ## 简介
 
 Hubble 助记词生成器 2.0 是一个纯静态、可完全离线运行的 HTML 应用，用于生成 BIP39 英文助记词并推导首个 P2WPKH（BIP84）收款地址。所有密码学算法（PBKDF2、HMAC-SHA512、SHA-256、RIPEMD-160、secp256k1 运算、Bech32 编码）均内置于页面，运行时无需依赖任何外部脚本或网络资源。
+
+> 原始项目参考： https://bip39.btchao.com/
 
 ### 核心特性
 
